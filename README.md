@@ -3,8 +3,11 @@ A tool to help locate files for a specific domain (similar to PowerMeta or Metag
 
 
 Document Search and Metadata Extraction Tool
+
 **Overview**
+
 This Python-based tool is designed to search for and download documents hosted on a specified domain. It leverages the Google Custom Search API to locate files with various extensions, downloads these files into a dedicated folder, and then extracts key metadata from the downloaded documents using ExifTool. Additionally, it logs the URLs of all discovered files into a separate file.
+
 **Key Features**
   •	Multi-Format Document Search:
     Searches for a wide range of file types including common document formats such as PDF, DOCX, TXT, XLS, and many others (e.g., doc, bak, tmp, gho, odt, ods, odp, odg, odf, gdoc).
@@ -14,6 +17,7 @@ This Python-based tool is designed to search for and download documents hosted o
     Keeps a record of all URLs where documents were found in a file named metadata-urls.txt within the domain folder.
   •	Metadata Extraction:
     Uses ExifTool to extract useful metadata fields (Author, Creator, CreatorTool, Producer, and Title) from each downloaded file and saves the results in metadata.txt.
+
 **Prerequisites**
   •	Python 3.x:
     Ensure Python is installed on your system.
@@ -25,8 +29,10 @@ This Python-based tool is designed to search for and download documents hosted o
   •	Required Python Libraries:
     The script uses the requests, os, time, and subprocess modules.
       o	You can install the requests library using:
+      
 Copy to install prerequisites (However you shouldn’t need to run this)
 pip install requests
+
 **How the Tool Works**
   1.	User Input & Setup:
     o	When the script runs, it prompts the user to enter the domain they want to search (e.g., example.com).
@@ -45,6 +51,7 @@ pip install requests
     o	The metadata for each file is appended to a file called metadata.txt, along with a header indicating which file the metadata belongs to.
   5.	Rate Limiting & Pausing:
     o	To respect Google’s rate limits, the script includes short pauses (2 seconds) between individual search requests and longer pauses (2 minutes) between searches for different file types.
+
 **Usage**
   1.	Configure API Credentials:
     Edit the script to include your Google API key and Custom Search Engine ID.
