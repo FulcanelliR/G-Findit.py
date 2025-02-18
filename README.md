@@ -23,7 +23,9 @@ This Python-based tool is designed to search for and download documents hosted o
     Ensure Python is installed on your system.
   •	Google API Key and Search Engine ID:
     You must have a valid API key and a Custom Search Engine (CSE) ID from Google. These credentials are required to access the Google Custom Search API.
-      o	https://programmablesearchengine.google.com/about/ 
+    
+      https://programmablesearchengine.google.com/about/ 
+      
   •	ExifTool:
     Install ExifTool and make sure it is available in your system’s PATH. This is necessary for the metadata extraction functionality.
   •	Required Python Libraries:
