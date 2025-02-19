@@ -9,6 +9,8 @@ Document Search and Metadata Extraction Tool
 This Python-based tool is designed to search for and download documents hosted on a specified domain. It leverages the Google Custom Search API to locate files with various extensions, downloads these files into a dedicated folder, and then extracts key metadata from the downloaded documents using ExifTool. Additionally, it logs the URLs of all discovered files into a separate file.
 
 **Key Features**
+
+
   •	Multi-Format Document Search:
   
       Searches for a wide range of file types including common document formats such as PDF, DOCX, TXT, XLS, and many others (e.g., doc, bak, tmp, gho, odt, ods, odp, odg, odf, gdoc).
@@ -25,7 +27,10 @@ This Python-based tool is designed to search for and download documents hosted o
   
       Uses ExifTool to extract useful metadata fields (Author, Creator, CreatorTool, Producer, and Title) from each downloaded file and saves the results in metadata.txt.
 
+
 **Prerequisites**
+
+
   •	Python 3.x:
   
     Ensure Python is installed on your system.
