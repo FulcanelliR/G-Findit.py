@@ -1,5 +1,5 @@
 # G-Findit.py
-A tool to help locate files for a specific domain (similar to PowerMeta or Metagoofil) using a Google Custom Search API key and extract out specific fields of metadata using Exiftool. (Free keys give 100 queries a day, which is enough to search for up to 10 filetypes a day)
+A tool to help locate files for a specific domain (similar to PowerMeta or Metagoofil) using a Google Custom Search API key and extract out specific fields of metadata using Exiftool. (Free keys give 100 queries a day, which is enough to search for up to 5 filetypes a day set to 10 pages searched. The filetypes and number of searched pages can be altered as needed. You can also have more than one API key and it will alternate to the next as a failover as extra error handling. 429 errors means you are out of queries for that day.)
 
 
 Document Search and Metadata Extraction Tool
